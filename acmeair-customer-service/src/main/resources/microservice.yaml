@@ -1,4 +1,4 @@
-APPLICATION_ID: acmeair
+APPLICATION_ID: acmeair-zhq
 service_description:
   name: customerServiceApp 
   version: 0.0.1
