@@ -248,6 +248,7 @@
     <servicecomb.version>0.5.0.B002</servicecomb.version>
     <!-- CSE the commercial extendsion of HuaweiCloud -->
     <cse.version>2.2.28</cse.version>
+    <netty.version>4.1.15.Final</netty.version>
   </properties>
 
     <dependencyManagement>
@@ -275,12 +276,12 @@
             <dependency>
                 <groupId>io.netty</groupId>
                 <artifactId>netty-codec</artifactId>
-                <version>4.1.15.Final</version>
+                <version>${netty.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.netty</groupId>
                 <artifactId>netty-codec-http</artifactId>
-                <version>4.1.15.Final</version>
+                <version>${netty.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.hibernate.javax.persistence</groupId>
