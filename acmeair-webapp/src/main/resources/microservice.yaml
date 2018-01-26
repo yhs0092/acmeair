@@ -5,7 +5,26 @@ service_description:
 cse:
   service:
     registry:
-      address: http://127.0.0.1:30100
+      address: https://cse.cn-north-1.myhwclouds.com:443
+      instance:
+        watch: false
+  monitor:
+    client:
+      serverUri: https://cse.cn-north-1.myhwclouds.com:443
+  handler:
+    chain:
+      Provider:
+        default: tracing-provider-apm,kpi-provider-apm,bizkeeper-provider,perf-stats,tracing-provider,sla-provider,qps-flowcontrol-provider
+      Consumer:
+        default: loadbalance,tracing-consumer-apm,kpi-consumer-apm,bizkeeper-consumer,perf-stats,tracing-consumer,sla-consumer,qps-flowcontrol-consumer
+  tracing:
+    enabled: true
+    samplingRate: 0.5
+  config:
+    client:
+      serverUri: https://cse.cn-north-1.myhwclouds.com:443
+      refreshMode: 1
+      refresh_interval: 5000
   isolation:
     bookingServiceApp:
       timeoutInMilliseconds: 30000
