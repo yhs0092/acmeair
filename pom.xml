@@ -251,6 +251,14 @@
     <netty.version>4.1.17.Final</netty.version>
   </properties>
 
+  <dependencies>
+    <dependency>
+      <groupId>com.huawei.paas.cse</groupId>
+      <artifactId>cse-solution-service-engine</artifactId>
+      <version>${cse.version}</version>
+    </dependency>
+  </dependencies>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
