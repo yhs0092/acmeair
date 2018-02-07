@@ -96,26 +96,26 @@
               <artifactId>slf4j-log4j12</artifactId>
             </exclusion>
             <exclusion>
-              <groupId>io.servicecomb</groupId>
+              <groupId>org.apache.servicecomb</groupId>
               <artifactId>foundation-config</artifactId>
             </exclusion>
             <exclusion>
-              <groupId>io.servicecomb</groupId>
+              <groupId>org.apache.servicecomb</groupId>
               <artifactId>java-chassis-core</artifactId>
             </exclusion>
           </exclusions>
         </dependency>
         <dependency>
-          <groupId>com.huawei.paas.cse</groupId>
-          <artifactId>foundation-config-cc</artifactId>
-          <version>${cse.version}</version>
+          <groupId>org.apache.servicecomb</groupId>
+          <artifactId>config-cc</artifactId>
+          <version>${servicecomb.version}</version>
           <exclusions>
             <exclusion>
-              <groupId>io.servicecomb</groupId>
+              <groupId>org.apache.servicecomb</groupId>
               <artifactId>foundation-config</artifactId>
             </exclusion>
             <exclusion>
-              <groupId>io.servicecomb</groupId>
+              <groupId>org.apache.servicecomb</groupId>
               <artifactId>java-chassis-core</artifactId>
             </exclusion>
           </exclusions>
@@ -126,11 +126,11 @@
           <version>${cse.version}</version>
           <exclusions>
             <exclusion>
-              <groupId>io.servicecomb</groupId>
+              <groupId>org.apache.servicecomb</groupId>
               <artifactId>foundation-config</artifactId>
             </exclusion>
             <exclusion>
-              <groupId>io.servicecomb</groupId>
+              <groupId>org.apache.servicecomb</groupId>
               <artifactId>java-chassis-core</artifactId>
             </exclusion>
           </exclusions>
@@ -141,11 +141,11 @@
           <version>${cse.version}</version>
           <exclusions>
             <exclusion>
-              <groupId>io.servicecomb</groupId>
+              <groupId>org.apache.servicecomb</groupId>
               <artifactId>foundation-config</artifactId>
             </exclusion>
             <exclusion>
-              <groupId>io.servicecomb</groupId>
+              <groupId>org.apache.servicecomb</groupId>
               <artifactId>java-chassis-core</artifactId>
             </exclusion>
           </exclusions>
@@ -156,11 +156,11 @@
           <version>${cse.version}</version>
           <exclusions>
             <exclusion>
-              <groupId>io.servicecomb</groupId>
+              <groupId>org.apache.servicecomb</groupId>
               <artifactId>foundation-config</artifactId>
             </exclusion>
             <exclusion>
-              <groupId>io.servicecomb</groupId>
+              <groupId>org.apache.servicecomb</groupId>
               <artifactId>java-chassis-core</artifactId>
             </exclusion>
           </exclusions>
@@ -171,11 +171,11 @@
           <version>${cse.version}</version>
           <exclusions>
             <exclusion>
-              <groupId>io.servicecomb</groupId>
+              <groupId>org.apache.servicecomb</groupId>
               <artifactId>foundation-config</artifactId>
             </exclusion>
             <exclusion>
-              <groupId>io.servicecomb</groupId>
+              <groupId>org.apache.servicecomb</groupId>
               <artifactId>java-chassis-core</artifactId>
             </exclusion>
           </exclusions>
@@ -245,16 +245,16 @@
     <pact.version>3.2.13</pact.version>
     <swagger.version>1.5.12</swagger.version>
     <acmeair.version>2.0.0-SNAPSHOT</acmeair.version>
-    <servicecomb.version>0.5.0.B002</servicecomb.version>
+    <servicecomb.version>0.5.0.B018</servicecomb.version>
     <!-- CSE the commercial extendsion of HuaweiCloud -->
-    <cse.version>2.2.28</cse.version>
-    <netty.version>4.1.15.Final</netty.version>
+    <cse.version>2.3.7</cse.version>
+    <netty.version>4.1.17.Final</netty.version>
   </properties>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>io.servicecomb</groupId>
+                <groupId>org.apache.servicecomb</groupId>
                 <artifactId>spring-boot-starter-provider</artifactId>
                 <version>${servicecomb.version}</version>
                 <exclusions>
@@ -269,7 +269,7 @@
                 </exclusions>
             </dependency>
             <dependency>
-                <groupId>io.servicecomb</groupId>
+                <groupId>org.apache.servicecomb</groupId>
                 <artifactId>spring-boot-starter-discovery</artifactId>
                 <version>${servicecomb.version}</version>
             </dependency>
