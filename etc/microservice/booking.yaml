@@ -32,3 +32,6 @@ cse:
     accessKey: ak
     secretKey: sk
     akskCustomCipher: default
+addressResolver:
+  searchDomains: default.svc.cluster.local,svc.cluster.local,cluster.local
+  ndots: 1
